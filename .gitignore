@@ -1,0 +1,34 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+/SoftwareDump
+spring_boot_ws/h2_db_home
+/Java/core_java_ws/.metadata/.log
+/Java/core_java_ws/.metadata
+/.metadata
+/Java/core_java_ws/.metadata
+bin/*/*
+/core_java_ws/JavaOOPS/bin/*
+/core_java_ws/JavaOOPS/bin/*/*
+/io_files/input/*
+/io_files/output/*
+/io_files/source/*
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

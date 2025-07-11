@@ -1,0 +1,129 @@
+
+What is the ReactJS?
+====================
+Reactjs is a Java Script Library. 
+It is used to develop the front end reusable components. 
+By using the ReactJS We can develop SPA Applications 
+SPA = Single Page Application. 
+and traditional applications also, that is MPA. 
+MPA = Multi Page Applications
+
+ReactJS is developed by Facebook in year 2011.
+It is realesed to public in year 2013
+ReactJS current version is 19
+ReactJS is developed by using JSX. 
+JSX = Java Script Extendable.
+JSX = Java Script + xml 
+ReactJS is very popular bz of its performance. 
+It is achieved by using Virtual DOM.
+
+ReactJS supports one way binding. 
+It is also one of the factor for its best performance. 
+
+Angular supports 2 -way binding 
+
+what is the 1 -way binding 
+
+data property to browser 
+If we assingn the value the variable, or 
+If we change the value of the variable, then it is automatically
+effects to screen, browser. 
+
+if we do changes in screen then if it effects to variable, 
+then it is called as 2-way binding. 
+
+To install the ReactJS , Suppose we have to install NodeJS. 
+
+when ever we completed nodejs installation, 
+pls go and check in nodejs folder in program files folder. 
+It contains only 3 important files. 
+1)node.exe 
+2)npm 
+3)npx 
+
+1)node.exe :It is used to execute the js files, 
+outsite of the browser. 
+
+2)npm
+=======
+It is command line tool.
+npm stands for node package manager. 
+By using it we can create node based application.
+by using the npm we can perform a verity of the operations. 
+1)we can create the node project 
+2)we can install the node libraries, 
+3) we can un install installed libraries. 
+4)we can run the project 
+5)we can build the project 
+6)we can test project.  
+
+npx = node package extandable. 
+It is used to execute package based js files. 
+
+create react js project. 
+========================
+
+npm install -g create-react-app 
+-g stands for global location.
+then it allowed to create react js project 
+from any location.
+
+npx create-react-app project_name.
+ex: 
+npm create-react-app test_proj
+
+after completion of the project creation, 
+go inside of the project at cmd, 
+and execute following command to start the project. 
+npm start
+
+
+react js project folder sturecture 
+=====================================
+1)node_modules 
+2)public 
+3)src 
+4)package.json
+
+1)node_modules 
+================
+this folder contains all installed libraries. 
+
+2)public 
+    this folder contains index.html file 
+    every we application must contains index.html
+
+3)src 
+    It is heart of the react js project. 
+    Project related source code files are available
+    in src folder only.
+
+    It contains 2 important files. 
+
+    App.js 
+    index.js 
+
+    App.js:
+    App.js is the top level root component 
+    of the ReactJS project. 
+
+    index.js:
+    Execution of the ReactJS project is processed 
+    by index.js file. 
+4)package.json
+package.json is called as application 
+configuration file. 
+It contains information about all installed libraries. 
+under dependencies section. 
+
+what is the differences between dependencies 
+and devDependencies  
+
+dependencies: required libries for production 
+environment 
+devDependencies: required libraries only for 
+development. 
+
+In react js components will be created in 2 approaches 
+1)functional components (trending one)
+2)class components (old )

@@ -1,0 +1,174 @@
+
+
+spread operator [...]
+
+destructing 
+===========
+destructuring is a mechonisim of accessing the elements of the objects and as well as the arrays 
+1)destructuring with objects 
+emp = {
+    empNo: 101,
+    empName: "Anil",
+    job: "Business Analyst", 
+    salary: 56000, 
+    mobileNo: "7788994455",
+    emailId: "anil@gmail.com"
+}
+
+empNo = emp.empNo;
+empName = emp.empName;
+job = emp.job;
+salary = emp.salary; 
+mobileNo = emp.mobileNo;
+emailId = emp.emailId;
+
+
+
+
+2)destructuring with arrays 
+accessing the arrays elements and storing in local variables.
+
+nos = [10, 20, 30, 40]
+
+first_no = nos[0]
+second_no = nos[1]
+
+================
+[first_no, second_no] = nos;
+
+
+===========================
+spread operator(...)
+======================
+spread operator is used to spread the elements of one collection
+into another collection. 
+
+nos = [10, 20, 30, 40]
+add 50 at end of nos.
+nos.push(50)
+
+spread operator with object 
+============================
+emp = {
+    empNo: 101, 
+    empName : "Anil", 
+
+}
+emp.job = "Business Analyst"; 
+
+emp = {...emp, job: "Business Analyst"}
+
+
+=====================================
+for 
+for - of 
+for - in 
+for-in is used againest with arrays, to iterate the array 
+elements directly rather than of using indexes.
+for - of 
+=========
+nos = [10, 20, 30, 40]
+for(let i=0; i<nos.length; i++){
+    log(nos[i])
+}
+
+for - in 
+========
+for-in is used againest with object literals, to access the elements 
+of the object by using its keys. 
+
+emp = {
+    empNo: 101, 
+    empName: "Anil", 
+    job: "Business Analyst", 
+    salary: 56000, 
+    mobileNo: 7788994455, 
+    emailId: "anil@gmail.com"
+}
+
+for(let key in emp){
+    log(key, ": ", emp[key])
+}
+
+Template Literals
+==================
+
+Default Params 
+===============
+function empDetails(empNo, empName, job, salary, gender){
+    console.log("Employee No: ", empNo);
+    console.log("Employee Name: ", empName);
+    console.log("Employee Job: ", job);
+    console.log("Employee Salary: ", salary);
+    console.log("Employee Gender: ", gender);
+}
+
+empDetails(101, "Anil", "Business Analyst", 56000, "Male")
+
+Variable length of arguments
+===========================
+if we are not sure, how many no of arguments 
+comes, in that sinario we go with Variable length of arguments
+
+this can be achieved rest arguments operator (...) 
+
+function add(a, b){
+    return a + b;
+}
+case -1:
+=======
+add(10, 2)
+
+case -2 : 
+add(10, 2, 5)
+
+case -3 :
+add(10, 2, 5, 20)
+
+Optional Chaining,
+==================
+Optional Chaining, is a mechoanism to verify wheather object 
+contains a valid data or not, before accessing it members, 
+to avoid un nessary null pointer exception.
+
+emp = {}
+emp = undefined 
+emp = {
+    empNo: 101,
+    empName: "Anil", 
+    address: {
+        street: "Balaji Nagar", 
+        city: "Hyderabd"
+    }
+}
+
+console.log(emp.empName)
+console.log(emp.address.city)
+
+if(emp && emp.address && emp.address.city)
+    console.log(emp.address.city)
+
+==================
+Fetch API (GET, POST)
+
+fetch api is used to get data from back end api calls.  
+it is a asynchronus call. 
+that means execution goes furtherly with out waiting for results. 
+
+fetch('http call')
+.then (a call back function)
+.then (a call back function)
+.catch(a call back function)
+If fetch operation is executed successfull and get back the results, 
+then "then caluse or function will be executed"
+other wise, .catch () function will be executed. 
+
+json place holder. 
+===================
+
+http methods 
+============
+GET =====to get data from server 
+POST======== to send the data to server and store in db 
+PUT ============to modifiy the data 
+DELETE ===========to delete the row.

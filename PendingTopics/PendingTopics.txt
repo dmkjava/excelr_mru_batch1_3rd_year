@@ -39,4 +39,4 @@ for-of  (done)
 Asynchronus      (done)   
 Set Interval     (done)
 nested promises.
-Dynamic to do list 
+Dynamic to do list  (done)

@@ -7,8 +7,8 @@ css
 =======
 Animations 
 Key Frames 
-Pseudo Classes and elements 
-first-child, nth child
+Pseudo Classes and elements  (done)
+first-child, nth child (done)
 Gradients
 Transitions 
 ===========
@@ -36,7 +36,7 @@ Optional Chaining, (done)
 Destructuring, (done)
 for-of  (done)
 
-Asynchronus
-Set Interval
+Asynchronus      (done)   
+Set Interval     (done)
 nested promises.
 Dynamic to do list 

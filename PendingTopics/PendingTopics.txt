@@ -12,9 +12,7 @@ first-child, nth child
 Gradients
 Transitions 
 ===========
-
-
-Jva Script 
+Java Script 
 ===============
 Hoisting 
 Global Polluting

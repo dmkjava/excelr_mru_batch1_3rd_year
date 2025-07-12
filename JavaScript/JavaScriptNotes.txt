@@ -172,3 +172,48 @@ GET =====to get data from server
 POST======== to send the data to server and store in db 
 PUT ============to modifiy the data 
 DELETE ===========to delete the row.
+
+
+
+important topics 
+======================
+functions 
+call back functions
+destructuring 
+asynchronus programming 
+promises 
+fetch api (http methods)
+
+
+====================
+arrow functions
+call back functions
+higher order functions 
+map, filter, reduce
+
+destructuring, 
+    array, object
+spread operator
+    array, object
+
+11-July-2024
+=============    
+
+
+Synchronous Execution:
+JavaScript is inherently single-threaded and synchronous, 
+meaning it executes code line by line in a sequential manner. 
+Each operation must complete before the next one begins.
+
+Asynchronous Operations:
+While synchronous by nature, JavaScript handles long-running or 
+non-blocking tasks (like network requests, timers, or user interactions) 
+asynchronously using mechanisms like the Event Loop, 
+Callback Queue (Macrotask Queue), and Microtask Queue. 
+These mechanisms allow JavaScript to perform operations without 
+freezing the main thread, providing a more responsive user experience.    
+
+Developing menu programming in html 
+===================================
+
+MyHotel     Idly Vada Upma Dosa MysoorBonda Pury Chapthy

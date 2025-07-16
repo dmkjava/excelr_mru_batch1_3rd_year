@@ -419,6 +419,213 @@ npm install @mui/material @emotion/react @emotion/styled
 develop todos application 
 ============================
 
+useEffect() 
+============
+useEffect () is a one of the important functional hook in ReactJS. 
+it takes 2 arguments. 
+1) first one is a call-back function.  (it is mandatory)
+2) second one is an array. (it is optional)
+It is used to execute side effects of the functional component.
+what is the meaning of the side effects. ?
+========================================
+If we want to execute some thing when component is rendered, 
+If we wat to execute some thing when component is unloaded.
+by that time to meet these requirements,
+we have to use useEffect() functional hook. 
+
+if we write a statement which may causes update the state variable 
+value by using mutator function, then, 
+this kind of change will causes again rerendering of the component. 
+
+useEffect is executed when component is rendered, 
+and state mutator function causes again rerender the component. 
+so these two activities causes executed each other continuesly.
+it is nothing but infinity loop.
+to over come this problem, we have to use second argument, 
+this is technically called dependency variable List. 
+
+if it is empty array then useEffect will be executed only once. 
+
+if this array contains any state variable, then this useEffect 
+will be executed, for every modification of the variable,
+which is kept in array list.
+
+the best ussage of the useEffect is to perform the 
+back end api calls when component is loaded. 
+and initialize the component state with result.
+
+task: 
+ex: develop a application to perform the back end api call, 
+to fetch the data and initialize the component 
+and display it. 
+
+json placeholder
+
+https://jsonplaceholder.typicode.com/users
+this is called end-point url 
+
+
+https://snapstore.vercel.app/
+https://fakestoreapi.in/api/products
+https://dummyjson.com/products
+
+e commarse app product items display 
+========================================
+css display container : flex 
+js to fetch the data:   fetch-api we are using 
+to decorate the item:  bootstrap card 
+
+==============
+axios 
+==========
+1)axios is a third party js library, 
+2)which is used to perform back end rest api communication calls 
+    in ReactJS.
+3)To work with axios, we must install it 
+        
+    npm install axios 
+
+    after that check in package.json
+
+4)What are the various http operations 
+    we can perform by using axios 
+    we can perform following http operations 
+    1)get() 
+    2)post () 
+    3)put() 
+    4)patch()
+    5)delete()  
+
+    1)get() : To get All records from server
+    2)post () : To create new record at server side, 
+        we have to send new data object
+    3)put() : to update data at server side. 
+            In case of put, record id, and full object 
+            with modified fields 
+            we have to send.
+    4)patch():
+            To update data at server side 
+            In case of patch, record id, and object with 
+            only modified fields  
+            we have to send
+    5)delete(): To delete the record at server side.
+            To identify the record, we should send the id.  
+
+5)axios is purely developed by using promises.
+    promises are used to perform asynchronous execution.
+
+    .then() -success
+    .catch() - failure
+
+    .then() signifies asynchronouss execution get success.
+    .catch() signifies asynchronous execution get failed.
+    .then() and .catch() takes a call back function as an argument.
+    Incase of .then(), result object will passed as argument
+     to call back function.
+    Incase of .catch(), error object will be 
+    passed as argument to call back function.            
+
+To work with a back end api call, temporarily we 
+are taking the help of 
+jsonplaceholder site or
+https://fakestoreapi.in/api/products
+https://dummyjson.com/products
+
+
+==============================
+
+Routing 
+=========
+Routing is nothing but developing menu based applications in ReactJS application.
+To develop routing in ReactJS, Suppose we have to install react-router-dom 
+
+npm i react-router-dom 
+
+important components in react-ruter-dom 
+==========================================
+Link/NavLink
+Router/BrowserRouter 
+Routes 
+Route 
+
+steps to develop the routing application 
+=======================================
+1)instal react-router-dom and check in package.json file 
+2)develop parent component of the application 
+3)develop menu component as header
+4)develop components associated to menu items 
+5)develop a layout component and integrate header and routes.
+
+Ex:
+            Home    AboutUs    Operations   Services    ContactUs
+
+
+1)active link 
+============ 
+2)programmatical routing 
+    usaully we are using useNavegate() hook to fullfill this requirement.
+
+3)lazy loading 
+=================
+lazy loading is nothing but a mechnosim of improving performance of application, 
+especially by the time of loading application first time in browser.
+
+By the time of of loading the web application in to browser from server, 
+usually at a time all menu modules will be loaded.
+This causes delay of loading the application and as well as home page.
+
+To over come this mechonasim we should use  lazy loading mechonism.
+
+Usually when ever we build the application in normal approach, 
+then all modules of the application  will be bundelled into single file.
+If we use lazi loading in implementation, then by the time of building the application, 
+for each and every menu items, respectively separete bundles is generated.
+So by the time of loading the application into browser from server, 
+only required libraries or modules or bundles for processing home page, those only loaded.
+other menu items related bundles will be loaded on demand.
+
+Note: lazy() function which is used import the components. 
+
+const Idly = lzay(impot ('./Idly'));
+
+routing 
+===========
+1)library
+========
+react-router-dom
+
+2)important components 
+=====================
+Link/NavLink 
+Router/BrowserRouter 
+Routes 
+Route 
+3)active link 
+    activeClassName 
+    activeclassname
+4)programmatical routing 
+    useNavegate() 
+5)params 
+    let { id } = useParams();    
+6)query params 
+    const [searchParams, setSearchParams] = useSearchParams();
+    searchParams.get("__firebase_request_key")        
+7)eaxct 
+8)lazy loading 
+    lazy(()=>imprt ('./file))  
+    In lazy loading component should be class based  or function based. 
+    But not arrow function or function expression 
+ 
+
+
+
+
+
+
+
+
+
+
 
 
 

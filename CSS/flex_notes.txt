@@ -1,0 +1,56 @@
+display: flex;
+
+The CSS properties we use for the flex container are:
+
+flex-direction
+flex-wrap
+flex-flow
+justify-content
+align-items
+align-content
+
+flex-direction
+===============
+row
+column
+row-reverse
+column-reverse
+
+flex-wrap
+===============
+nowrap
+wrap
+wrap-reverse
+
+flex-flow
+===============
+The flex-flow property is a shorthand property 
+for setting both the flex-direction and flex-wrap properties.
+
+justify-content
+===============
+center
+flex-start
+flex-end
+space-around
+space-between
+space-evenly
+
+align-items
+===============
+center
+flex-start
+flex-end
+stretch
+baseline
+normal
+
+align-content
+===============
+center
+stretch
+flex-start
+flex-end
+space-around
+space-between
+space-evenly

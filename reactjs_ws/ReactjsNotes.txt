@@ -536,8 +536,10 @@ https://dummyjson.com/products
 
 Routing 
 =========
-Routing is nothing but developing menu based applications in ReactJS application.
-To develop routing in ReactJS, Suppose we have to install react-router-dom 
+Routing is nothing but developing menu based applications 
+in ReactJS application.
+To develop routing in ReactJS, 
+Suppose we have to install react-router-dom 
 
 npm i react-router-dom 
 

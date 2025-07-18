@@ -617,9 +617,36 @@ Route
     lazy(()=>imprt ('./file))  
     In lazy loading component should be class based  or function based. 
     But not arrow function or function expression 
- 
 
+    ========================
+    props drilling 
+    ==============
+    props drilling means sending the props to too deep child component.
 
+props destructuring 
+=======================
+
+context api 
+===========
+to develop the context api, we have to create one context 
+by using createContext() function. 
+this context component can contain .Provider, 
+and Consumer 
+.Provider is used at top level where data is supplied to child 
+component. 
+.Consumer is used where child component is consuming the data. 
+
+useContext() functional hook 
+to simplify the process of context consumer. 
+
+context and useContext together
+help us to get global data into deep level child components. 
+
+useReducer () functional hook 
+useReducer () is a functional hook. 
+It is almost same as useState() functional hook.
+It is recommended to perform more complecated state manipulations 
+operations. 
 
 
 

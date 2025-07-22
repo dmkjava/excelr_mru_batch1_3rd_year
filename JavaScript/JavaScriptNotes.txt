@@ -1,0 +1,335 @@
+
+
+spread operator [...]
+
+destructing 
+===========
+destructuring is a mechonisim of accessing the elements of the objects and as well as the arrays 
+1)destructuring with objects 
+emp = {
+    empNo: 101,
+    empName: "Anil",
+    job: "Business Analyst", 
+    salary: 56000, 
+    mobileNo: "7788994455",
+    emailId: "anil@gmail.com"
+}
+
+empNo = emp.empNo;
+empName = emp.empName;
+job = emp.job;
+salary = emp.salary; 
+mobileNo = emp.mobileNo;
+emailId = emp.emailId;
+
+
+
+
+2)destructuring with arrays 
+accessing the arrays elements and storing in local variables.
+
+nos = [10, 20, 30, 40]
+
+first_no = nos[0]
+second_no = nos[1]
+
+================
+[first_no, second_no] = nos;
+
+
+===========================
+spread operator(...)
+======================
+spread operator is used to spread the elements of one collection
+into another collection. 
+
+nos = [10, 20, 30, 40]
+add 50 at end of nos.
+nos.push(50)
+
+spread operator with object 
+============================
+emp = {
+    empNo: 101, 
+    empName : "Anil", 
+
+}
+emp.job = "Business Analyst"; 
+
+emp = {...emp, job: "Business Analyst"}
+
+
+=====================================
+for 
+for - of 
+for - in 
+for-in is used againest with arrays, to iterate the array 
+elements directly rather than of using indexes.
+for - of 
+=========
+nos = [10, 20, 30, 40]
+for(let i=0; i<nos.length; i++){
+    log(nos[i])
+}
+
+for - in 
+========
+for-in is used againest with object literals, to access the elements 
+of the object by using its keys. 
+
+emp = {
+    empNo: 101, 
+    empName: "Anil", 
+    job: "Business Analyst", 
+    salary: 56000, 
+    mobileNo: 7788994455, 
+    emailId: "anil@gmail.com"
+}
+
+for(let key in emp){
+    log(key, ": ", emp[key])
+}
+
+Template Literals
+==================
+
+Default Params 
+===============
+function empDetails(empNo, empName, job, salary, gender){
+    console.log("Employee No: ", empNo);
+    console.log("Employee Name: ", empName);
+    console.log("Employee Job: ", job);
+    console.log("Employee Salary: ", salary);
+    console.log("Employee Gender: ", gender);
+}
+
+empDetails(101, "Anil", "Business Analyst", 56000, "Male")
+
+Variable length of arguments
+===========================
+if we are not sure, how many no of arguments 
+comes, in that sinario we go with Variable length of arguments
+
+this can be achieved rest arguments operator (...) 
+
+function add(a, b){
+    return a + b;
+}
+case -1:
+=======
+add(10, 2)
+
+case -2 : 
+add(10, 2, 5)
+
+case -3 :
+add(10, 2, 5, 20)
+
+Optional Chaining,
+==================
+Optional Chaining, is a mechoanism to verify wheather object 
+contains a valid data or not, before accessing it members, 
+to avoid un nessary null pointer exception.
+
+emp = {}
+emp = undefined 
+emp = {
+    empNo: 101,
+    empName: "Anil", 
+    address: {
+        street: "Balaji Nagar", 
+        city: "Hyderabd"
+    }
+}
+
+console.log(emp.empName)
+console.log(emp.address.city)
+
+if(emp && emp.address && emp.address.city)
+    console.log(emp.address.city)
+
+==================
+Fetch API (GET, POST)
+
+fetch api is used to get data from back end api calls.  
+it is a asynchronus call. 
+that means execution goes furtherly with out waiting for results. 
+
+fetch('http call')
+.then (a call back function)
+.then (a call back function)
+.catch(a call back function)
+If fetch operation is executed successfull and get back the results, 
+then "then caluse or function will be executed"
+other wise, .catch () function will be executed. 
+
+json place holder. 
+===================
+
+http methods 
+============
+GET =====to get data from server 
+POST======== to send the data to server and store in db 
+PUT ============to modifiy the data 
+DELETE ===========to delete the row.
+
+
+
+important topics 
+======================
+functions 
+call back functions
+destructuring 
+asynchronus programming 
+promises 
+fetch api (http methods)
+
+
+====================
+arrow functions
+call back functions
+higher order functions 
+map, filter, reduce
+
+destructuring, 
+    array, object
+spread operator
+    array, object
+
+11-July-2024
+=============    
+
+
+Synchronous Execution:
+JavaScript is inherently single-threaded and synchronous, 
+meaning it executes code line by line in a sequential manner. 
+Each operation must complete before the next one begins.
+
+Asynchronous Operations:
+While synchronous by nature, JavaScript handles long-running or 
+non-blocking tasks (like network requests, timers, or user interactions) 
+asynchronously using mechanisms like the Event Loop, 
+Callback Queue (Macrotask Queue), and Microtask Queue. 
+These mechanisms allow JavaScript to perform operations without 
+freezing the main thread, providing a more responsive user experience.    
+
+Developing menu programming in html 
+===================================
+
+MyHotel     Idly Vada Upma Dosa MysoorBonda Pury Chapthy
+
+Asynchronus
+================
+Set Interval
+
+JavaScript is single threaded non blocked 
+sequential execution programming languge. 
+
+Java Script supports 2 types of executions. 
+1)sequential execution 
+2)asynchronus execution. 
+
+1)synchronus execution, or sequential execution 
+=========================
+instructions will be executed, 
+one after another, in same sequence order 
+how they kept. 
+second instruction execution will be happend
+after completion of the first instruction. 
+
+or 
+after completion of execution of first instruction
+then only execution goes to second instruction. 
+ex: 
+a = 2 + 5; 
+b = 10 - 2; 
+
+
+asynchronus execution 
+=====================
+If we are not sure, when instruction execution will be 
+completed. In that case to improve the performance 
+of the application, asynchronus execution is best 
+solution. 
+In this asynchronus execution, 
+execution no need wait completion of the 
+instruction execution. 
+best ex: is network calls, db calls, 
+event programming, call back function 
+programming etc. 
+
+ex: 
+mutator function of the useState() functional hook.
+
+setTimeout() 
+setInterval()
+
+
+setTimeout() 
+============
+setTimeout () is a asynchronus function. 
+It takes 2 arguments, 
+first one is a call back function. 
+second one is a timer in milli seconds, when suppose this call back function 
+has to be executed. 
+
+setTimeout () calls the call back function only one time. 
+
+
+setInterval() 
+=============
+setInterval() is same as setTimeout () . 
+it takes 2 arguments. 
+first one is a call back function 
+second one a time interval between multiple calls of the 
+call back function 
+
+conclusion : setInterval () call the call back function, 
+multiple times by maintaining interval time 
+in between the calls. 
+
+ex: 
+function someFun(){
+    console.log('hi')
+}
+setInterval(someFun, 1000)
+
+here someFun will be called multiple times, 
+by maintaining the 1000 milli seconds as time interval. 
+this setInterval () is also a asyncronus execution function. 
+
+reduce() 
+========
+1)reduce is a member function of the arrays. 
+2)it is also a higher order function. 
+3)it takes a call back function as argument. 
+4)reduce () function process each element of the array 
+and passes to call back function as arguments. 
+
+5)this call function performs cumilative-totals 
+    for each element of the array and returns back.
+6)reduce () captures this cumilative total and 
+again passes to call back function, while processing next element. 
+
+7)at end of the array, reduce () returns final cumilative value. 
+
+var nos = [10, 20, 30, 40, ]
+find the totals: 
+
+total = nos.reduce((ctot, ele)=>ctot + Elements)
+
+================
+removing duplicates 
+===================================================
+var nos = [10, 12, 10, 15, 12, 20, 5, 10, 15, 5]
+let unk_nos= []
+for el of nos{
+    if (!unk_nos.contails)
+        unk_nos.push(el);
+}
+console.log(unk_nos)
+
+
+
+
+

@@ -1,0 +1,32 @@
+CSS Pseudo-elements
+A CSS pseudo-element is used to style specific parts of an element.
+
+For example, it can be used to:
+
+Style the first letter or line, of an element
+Insert content before or after an element
+Style the markers of list items
+Style the viewbox behind a dialog box
+The table below shows the different pseudo-elements in CSS:
+
+Pseudo-element	Example	Example description
+::after	p::after
+div::after	Inserts something after the content of the specified element
+::backdrop	dialog::backdrop	Styles the viewbox behind a dialog box or popover element
+::before	p::before
+div::before	Inserts something before the content of the specified element
+::file-selector-button	::file-selector-button	Selects any button of type <input type="file">
+::first-letter	p::first-letter	Selects the first letter of every <p> element
+::first-line	p::first-line	Selects the first line of every <p> element
+::grammar-error	::grammar-error	Styles a text that the browser has flagged as grammatically incorrect
+::highlight()	::highlight(custom-name)	Selects a custom highlight
+::marker	::marker	Selects the markers of list items
+::placeholder	input::placeholder
+textarea::placeholder	Styles the placeholder text of <input> or <textarea> elements
+::selection	::selection	Styles the user-selected text
+::spelling-error	::spelling-error	Styles a text that the browser has flagged as incorrectly spelled
+::view-transition	::view-transition	Represents the root of the view transitions overlay, which contains all view transition on the page
+::view-transition-group	::view-transition-group	Represents a single view transition snapshot group
+::view-transition-image-pair	::view-transition-image-pair	Represents a container for a view transition's "old" and "new" view states - before and after the transition
+::view-transition-new	::view-transition-new	Represents the "new" view state of a view transition
+::view-transition-old	::view-transition-old	Represents the "old" view state of a view transition

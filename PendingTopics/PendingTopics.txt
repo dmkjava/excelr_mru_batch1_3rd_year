@@ -1,0 +1,42 @@
+html
+=========
+svg tag 
+canvas 
+
+css 
+=======
+Animations 
+Key Frames 
+Pseudo Classes and elements  (done)
+first-child, nth child (done)
+Gradients
+Transitions 
+===========
+Java Script 
+===============
+Hoisting 
+Global Polluting
+OOPS
+Fetch API (GET, POST) (done)
+Promises chaining
+
+Event Listeners
+Form Handling 
+Validation 
+DOM Tree,
+Select Elements
+
+ES6 Advanced Concepts 
+=====================
+Template Literals (done)
+Default Params (done)
+Variable length of arguments (done)
+Spread Operator  (done)
+Optional Chaining, (done)
+Destructuring, (done)
+for-of  (done)
+
+Asynchronus      (done)   
+Set Interval     (done)
+nested promises.
+Dynamic to do list  (done)

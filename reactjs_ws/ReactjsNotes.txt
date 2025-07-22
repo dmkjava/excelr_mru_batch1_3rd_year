@@ -1,0 +1,664 @@
+
+What is the ReactJS?
+====================
+Reactjs is a Java Script Library. 
+It is used to develop the front end reusable components. 
+By using the ReactJS We can develop SPA Applications 
+SPA = Single Page Application. 
+and traditional applications also, that is MPA. 
+MPA = Multi Page Applications
+
+ReactJS is developed by Facebook in year 2011.
+It is realesed to public in year 2013
+ReactJS current version is 19
+ReactJS is developed by using JSX. 
+JSX = Java Script Extendable.
+JSX = Java Script + xml 
+ReactJS is very popular bz of its performance. 
+It is achieved by using Virtual DOM.
+
+ReactJS supports one way binding. 
+It is also one of the factor for its best performance. 
+
+Angular supports 2 -way binding 
+
+what is the 1 -way binding 
+
+data property to browser 
+If we assingn the value the variable, or 
+If we change the value of the variable, then it is automatically
+effects to screen, browser. 
+
+if we do changes in screen then if it effects to variable, 
+then it is called as 2-way binding. 
+
+To install the ReactJS , Suppose we have to install NodeJS. 
+
+when ever we completed nodejs installation, 
+pls go and check in nodejs folder in program files folder. 
+It contains only 3 important files. 
+1)node.exe 
+2)npm 
+3)npx 
+
+1)node.exe :It is used to execute the js files, 
+outsite of the browser. 
+
+2)npm
+=======
+It is command line tool.
+npm stands for node package manager. 
+By using it we can create node based application.
+by using the npm we can perform a verity of the operations. 
+1)we can create the node project 
+2)we can install the node libraries, 
+3) we can un install installed libraries. 
+4)we can run the project 
+5)we can build the project 
+6)we can test project.  
+
+npx = node package extandable. 
+It is used to execute package based js files. 
+
+create react js project. 
+========================
+
+npm install -g create-react-app 
+-g stands for global location.
+then it allowed to create react js project 
+from any location.
+
+npx create-react-app project_name.
+ex: 
+npm create-react-app test_proj
+
+after completion of the project creation, 
+go inside of the project at cmd, 
+and execute following command to start the project. 
+npm start
+
+
+react js project folder sturecture 
+=====================================
+1)node_modules 
+2)public 
+3)src 
+4)package.json
+
+1)node_modules 
+================
+this folder contains all installed libraries. 
+
+2)public 
+    this folder contains index.html file 
+    every we application must contains index.html
+
+3)src 
+    It is heart of the react js project. 
+    Project related source code files are available
+    in src folder only.
+
+    It contains 2 important files. 
+
+    App.js 
+    index.js 
+
+    App.js:
+    App.js is the top level root component 
+    of the ReactJS project. 
+
+    index.js:
+    Execution of the ReactJS project is processed 
+    by index.js file. 
+4)package.json
+package.json is called as application 
+configuration file. 
+It contains information about all installed libraries. 
+under dependencies section. 
+
+what is the differences between dependencies 
+and devDependencies  
+
+dependencies: required libries for production 
+environment 
+devDependencies: required libraries only for 
+development. 
+
+In react js components will be created in 2 approaches 
+1)functional components (trending one)
+2)class components (old )
+
+====================
+Emp Form html
+Arithmetic Operations App 
+Working with Images 
+
+biggenst challanging question?
+how to improve your team performance?
+
+How to specify css classes in ReactJS? className
+In html we will assign css classes by using class attribute, 
+but in ReactJS We can specify by using className, why?
+what is the return type of useState() 
+
+jsx fragment can take only single parenting element. 
+=====================================
+7-July-2025
+===========
+working with list 
+or 
+list processing in ReactJS 
+
+
+task is counter app 
+======================
+conditional statement in react js 
+==================================
+toggling ex 
+
+looping in react js
+=====================
+looping in react js we achieve by using map function.
+
+what is the first class citezen?
+
+usually expressions or values we are assigning to variable, 
+but es6 allowes us to assign functions also to variables, 
+
+this behaviour allowses us, a function can be passed as 
+argument to some other function, 
+or a function can return some other function, 
+
+this kind of special behavaviour of the functions is make 
+functions are acting as first class citezen in js. 
+
+a = 10;
+b = 20; 
+c = a + b;
+x = a; 
+
+const add = function add(a, b){
+    return a + b;
+}
+
+
+
+what is the call back function 
+===============================
+a function can be passed as argument to some other function, 
+this kind of behaviour is call back function. 
+in this case, functions does not have parantasis, 
+if we keep parantasis then it is become as function calling. 
+
+higher order functions 
+=======================
+a function can be passed as 
+argument to some other function, 
+or a function can return some other function, 
+this kind of behaviour is called as higher order functions.
+
+ex: 
+array methods: 
+    map, filter, reduce, forEach etc. 
+ex: 
+input 
+nos = [10, 20, 30, 40, 50]   
+output 
+output = [12, 22, 32, 42, 52] 
+
+output =  []
+for(let i=0; i<nos.length; i++){
+    output.push(nos[i])
+}
+
+
+working with map() is technicall called as list processing in 
+React JS 
+
+List Processing 
+=================
+
+List processing is nothing but working with arrays and 
+process them.
+
+Ex: 
+fruitsList = {'Apples', 'Mangoes', 'Banana', 'Pine-Apple', 'Orranges', 'Grapes'}
+
+
+
+working with map () 
+
+map () is the member function of the arrays. 
+It is a higher order function.
+it takes some other function as argument.
+technically it is called as call back function. 
+map() function internally process the each element of the array 
+and passes this element as argument to call back function. 
+call back function modifies this argument as per business requirement and 
+returns back. 
+map() function collects this return value of the call back function 
+and stores in internal array. 
+at end of the array map () function return this internal array as result. 
+
+what is the differences between map () and forEach()
+map() and forEach () both are member functions of arrays. 
+both are higher order functions. 
+map () maintains internal array. 
+forEach() does not maintain internall array, manually ourself we have to 
+maintain an external array. 
+so map () returns internal array at end of the array processing. 
+forEach() does not return any thing, that means Undefined. 
+
+
+
+pls connect your LMS 
+and start task. duration 60 min
+
+
+
+
+props 
+=======
+props is a built in object of the reactjs.
+it is acting as bridge between the components, to share the data 
+from one component to another component. 
+props is a read only object. it does not allowed 
+to modify the properties.
+communication between components 
+================================
+communication between components is possible, only in case, 
+if they are arranged parrent and child component manner. 
+that means a parent component is as acting as container 
+to child component.
+Ex: 
+    <div> 
+        <h3>Hi</h3>
+    </div>
+    here <div> is a parent component 
+    <h3> is a child component 
+
+communication between the components is possible 
+in ways. 
+1)parent component to child component. 
+2)child component to parent component. 
+
+1)parent component to child component. 
+this is the very easy one. 
+just passing data as key-value attributes same as html element 
+attributes.
+all these key - value attributes are available 
+in child component as props object. 
+we can acess them props.attribute_name, then we will get 
+its associated value. 
+
+
+styles in react js 
+======================
+font-size: 22px; 
+fontSize: "22px"
+
+background-color: 'red';
+backgroundColor: "red"
+
+in the form of object literal. 
+
+inline style in css 
+style = "font-size:22px; background-color:'red';"
+
+inline style in reactjs 
+=======================
+It should be a object literal. 
+css properties should be in camel case. 
+
+style = {{fontSize: "22px", backgroundColor: "red"}}
+{
+    fontSize: "22px", 
+    backgroundColor: "red"
+}
+
+
+
+
+
+what is the map() function?
+what is the difference between map() and forEach() function.?
+
+
+props 
+parent to child communication 
+styles in react js 
+
+rendering of the component 
+re rendering of the component 
+=================================
+if we display the component to screen then it is called as rendering of the component. 
+
+if we try to re display the component second time onwards this is called as rerendering. 
+
+
+Dear Trainers, 
+
+Please inform all students that there will be a manual test today. 
+
+A PDF containing the coding question will be shared. 
+Kindly display the question using the projector.
+
+Students are required to write and execute the code in VS Code. 
+
+After completing the test, students must save their file. 
+
+Each student should attach their saved file in 
+the attendance feedback form 
+(an attachment option is available in the form). 
+
+Test Duration: 1:30 PM to 2:30 PM (1 hour)
+
+Thank you.
+===================
+11-July-2025
+==============
+what is the map()?
+
+1)It is the member function of the array.
+2)it is the higher order function. 
+3)it takes a call back function as argument. 
+4)this method process each element of the array, 
+and passes to call back function as argument. 
+5)call back function modifies this argument 
+    as per the business requirement and return back. 
+6)map () captures this return value and stores 
+its internal array. 
+7) at the end of sourse array, this map() 
+returns internal array as result. 
+8)map() does not modifies source array.
+
+filter() 
+=========
+1)It is the member function of the array.
+2)it is the higher order function.
+3)it takes a call back function as argument. 
+4)this method process each element of the array, 
+and passes to call back function as argument.
+5)call back function verifies this argument
+    againest some condition, 
+    as per the business requirement and return a 
+    boolean value as result. 
+6)filter () captures this return value and 
+    if it is the true then current element stores 
+    in its internal array.
+    otherwise current element is skipped. 
+7) at the end of sourse array, this filter() 
+returns internal array as result.    
+8)filter() does not modifies source array.
+
+var nos = [4, 13, 1, 6, 9, 7, 15, 17, 3, 2, 18, 11]
+task : find only odd nos from given array. 
+
+destructure 
+spread operator 
+
+========================
+bootstrap card related classes 
+=============================
+card 
+    card-img 
+    card-body 
+        card-title 
+        card-text 
+
+working with dialog 
+======================
+Dialog 
+DialogTitle 
+DialogContent
+DialogContentText 
+DialogActions   
+
+npm install @mui/material @emotion/react @emotion/styled
+
+develop todos application 
+============================
+
+useEffect() 
+============
+useEffect () is a one of the important functional hook in ReactJS. 
+it takes 2 arguments. 
+1) first one is a call-back function.  (it is mandatory)
+2) second one is an array. (it is optional)
+It is used to execute side effects of the functional component.
+what is the meaning of the side effects. ?
+========================================
+If we want to execute some thing when component is rendered, 
+If we wat to execute some thing when component is unloaded.
+by that time to meet these requirements,
+we have to use useEffect() functional hook. 
+
+if we write a statement which may causes update the state variable 
+value by using mutator function, then, 
+this kind of change will causes again rerendering of the component. 
+
+useEffect is executed when component is rendered, 
+and state mutator function causes again rerender the component. 
+so these two activities causes executed each other continuesly.
+it is nothing but infinity loop.
+to over come this problem, we have to use second argument, 
+this is technically called dependency variable List. 
+
+if it is empty array then useEffect will be executed only once. 
+
+if this array contains any state variable, then this useEffect 
+will be executed, for every modification of the variable,
+which is kept in array list.
+
+the best ussage of the useEffect is to perform the 
+back end api calls when component is loaded. 
+and initialize the component state with result.
+
+task: 
+ex: develop a application to perform the back end api call, 
+to fetch the data and initialize the component 
+and display it. 
+
+json placeholder
+
+https://jsonplaceholder.typicode.com/users
+this is called end-point url 
+
+
+https://snapstore.vercel.app/
+https://fakestoreapi.in/api/products
+https://dummyjson.com/products
+
+e commarse app product items display 
+========================================
+css display container : flex 
+js to fetch the data:   fetch-api we are using 
+to decorate the item:  bootstrap card 
+
+==============
+axios 
+==========
+1)axios is a third party js library, 
+2)which is used to perform back end rest api communication calls 
+    in ReactJS.
+3)To work with axios, we must install it 
+        
+    npm install axios 
+
+    after that check in package.json
+
+4)What are the various http operations 
+    we can perform by using axios 
+    we can perform following http operations 
+    1)get() 
+    2)post () 
+    3)put() 
+    4)patch()
+    5)delete()  
+
+    1)get() : To get All records from server
+    2)post () : To create new record at server side, 
+        we have to send new data object
+    3)put() : to update data at server side. 
+            In case of put, record id, and full object 
+            with modified fields 
+            we have to send.
+    4)patch():
+            To update data at server side 
+            In case of patch, record id, and object with 
+            only modified fields  
+            we have to send
+    5)delete(): To delete the record at server side.
+            To identify the record, we should send the id.  
+
+5)axios is purely developed by using promises.
+    promises are used to perform asynchronous execution.
+
+    .then() -success
+    .catch() - failure
+
+    .then() signifies asynchronouss execution get success.
+    .catch() signifies asynchronous execution get failed.
+    .then() and .catch() takes a call back function as an argument.
+    Incase of .then(), result object will passed as argument
+     to call back function.
+    Incase of .catch(), error object will be 
+    passed as argument to call back function.            
+
+To work with a back end api call, temporarily we 
+are taking the help of 
+jsonplaceholder site or
+https://fakestoreapi.in/api/products
+https://dummyjson.com/products
+
+
+==============================
+
+Routing 
+=========
+Routing is nothing but developing menu based applications 
+in ReactJS application.
+To develop routing in ReactJS, 
+Suppose we have to install react-router-dom 
+
+npm i react-router-dom 
+
+important components in react-ruter-dom 
+==========================================
+Link/NavLink
+Router/BrowserRouter 
+Routes 
+Route 
+
+steps to develop the routing application 
+=======================================
+1)instal react-router-dom and check in package.json file 
+2)develop parent component of the application 
+3)develop menu component as header
+4)develop components associated to menu items 
+5)develop a layout component and integrate header and routes.
+
+Ex:
+            Home    AboutUs    Operations   Services    ContactUs
+
+
+1)active link 
+============ 
+2)programmatical routing 
+    usaully we are using useNavegate() hook to fullfill this requirement.
+
+3)lazy loading 
+=================
+lazy loading is nothing but a mechnosim of improving performance of application, 
+especially by the time of loading application first time in browser.
+
+By the time of of loading the web application in to browser from server, 
+usually at a time all menu modules will be loaded.
+This causes delay of loading the application and as well as home page.
+
+To over come this mechonasim we should use  lazy loading mechonism.
+
+Usually when ever we build the application in normal approach, 
+then all modules of the application  will be bundelled into single file.
+If we use lazi loading in implementation, then by the time of building the application, 
+for each and every menu items, respectively separete bundles is generated.
+So by the time of loading the application into browser from server, 
+only required libraries or modules or bundles for processing home page, those only loaded.
+other menu items related bundles will be loaded on demand.
+
+Note: lazy() function which is used import the components. 
+
+const Idly = lzay(impot ('./Idly'));
+
+routing 
+===========
+1)library
+========
+react-router-dom
+
+2)important components 
+=====================
+Link/NavLink 
+Router/BrowserRouter 
+Routes 
+Route 
+3)active link 
+    activeClassName 
+    activeclassname
+4)programmatical routing 
+    useNavegate() 
+5)params 
+    let { id } = useParams();    
+6)query params 
+    const [searchParams, setSearchParams] = useSearchParams();
+    searchParams.get("__firebase_request_key")        
+7)eaxct 
+8)lazy loading 
+    lazy(()=>imprt ('./file))  
+    In lazy loading component should be class based  or function based. 
+    But not arrow function or function expression 
+
+    ========================
+    props drilling 
+    ==============
+    props drilling means sending the props to too deep child component.
+
+props destructuring 
+=======================
+
+context api 
+===========
+to develop the context api, we have to create one context 
+by using createContext() function. 
+this context component can contain .Provider, 
+and Consumer 
+.Provider is used at top level where data is supplied to child 
+component. 
+.Consumer is used where child component is consuming the data. 
+
+useContext() functional hook 
+to simplify the process of context consumer. 
+
+context and useContext together
+help us to get global data into deep level child components. 
+
+useReducer () functional hook 
+useReducer () is a functional hook. 
+It is almost same as useState() functional hook.
+It is recommended to perform more complecated state manipulations 
+operations. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

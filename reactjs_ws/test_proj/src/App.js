@@ -51,9 +51,9 @@ function App() {
       {/* <UseEffectDemo></UseEffectDemo> */}
       {/* <UsersListApp></UsersListApp> */}
       {/* <DummyJsonEcommerseApp></DummyJsonEcommerseApp> */}
-      {/* <FakeStoreApiEcommerseApp></FakeStoreApiEcommerseApp> */}
+      <FakeStoreApiEcommerseApp></FakeStoreApiEcommerseApp>
       {/* <AxiosDemoUsingDummyJson></AxiosDemoUsingDummyJson> */}
-      <MyHotelApp></MyHotelApp>
+      {/* <MyHotelApp></MyHotelApp> */}
       {/* <PropsDrillingApp></PropsDrillingApp> */}
       {/* <PropsDrillingAppV2></PropsDrillingAppV2> */}
       {/* <ContextApiDemo></ContextApiDemo> */}

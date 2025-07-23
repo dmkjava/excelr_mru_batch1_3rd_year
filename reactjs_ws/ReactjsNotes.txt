@@ -648,6 +648,14 @@ It is almost same as useState() functional hook.
 It is recommended to perform more complecated state manipulations 
 operations. 
 
+communication between compoents 
+===============================
+communication between the components we can do 
+by using the props. 
+
+this can be done in 2 ways 
+1)parent to child 
+2)child to parent 
 
 
 

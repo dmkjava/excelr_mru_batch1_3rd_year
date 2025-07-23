@@ -27,6 +27,7 @@ import ContextApiDemo from './components/context_api_demo/ContextApiDemo';
 import UseContextDemo from './components/use_context_demo/UseContextDemo';
 import UseReducerDemo from './components/use_reducer_demo/UseReducerDemo';
 import FakeStoreApiEcommerseApp from './components/fakestore_api/FakeStoreApiEcommerseApp';
+import ParentToChild from './components/parent_child/ParentToChild';
 
 function App() {
   return (
@@ -51,7 +52,7 @@ function App() {
       {/* <UseEffectDemo></UseEffectDemo> */}
       {/* <UsersListApp></UsersListApp> */}
       {/* <DummyJsonEcommerseApp></DummyJsonEcommerseApp> */}
-      <FakeStoreApiEcommerseApp></FakeStoreApiEcommerseApp>
+      {/* <FakeStoreApiEcommerseApp></FakeStoreApiEcommerseApp> */}
       {/* <AxiosDemoUsingDummyJson></AxiosDemoUsingDummyJson> */}
       {/* <MyHotelApp></MyHotelApp> */}
       {/* <PropsDrillingApp></PropsDrillingApp> */}
@@ -59,6 +60,7 @@ function App() {
       {/* <ContextApiDemo></ContextApiDemo> */}
       {/* <UseContextDemo></UseContextDemo> */}
       {/* <UseReducerDemo></UseReducerDemo> */}
+      <ParentToChild></ParentToChild>
     </div>
   );
 }

@@ -1,5 +1,9 @@
+import { useEffect } from 'react';
 
 function Idly(){
+    useEffect(()=>{
+        document.title =  "Idly"
+    }, []);
     return (
         <div>
             <h3>Idly</h3>

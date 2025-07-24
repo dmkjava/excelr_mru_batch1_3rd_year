@@ -1,5 +1,9 @@
+import { useEffect } from 'react';
 
 function Puri(){
+    useEffect(()=>{
+                document.title =  "Puri"
+            }, []);
     return (
         <div>
             <h3>Puri</h3>

@@ -1,5 +1,9 @@
+import { useEffect } from 'react';
 
 function MysurBonda(){
+    useEffect(()=>{
+            document.title =  "MysurBonda"
+        }, []);
     return (
         <div>
             <h3 className='text-center'>Mysur Bonda</h3>

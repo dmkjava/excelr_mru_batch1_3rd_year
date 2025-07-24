@@ -658,6 +658,33 @@ this can be done in 2 ways
 2)child to parent 
 
 
+4-March-2025
+==========    
+Rules for hooks 
+==================
+1)hooks are introduced in 16.8 version for the purpose of functional components.
+2)hooks should not allowed in class components. 
+3)hooks should not be used in normal js functions.
+4)hooks should be used only in functional components. 
+5)hooks should not be used in conditinal statements, loop, and inner functions. 
+6)hooks must be used in functional components top level.
+
+Developing the custom hooks 
+============================
+While developing the custom hooks we have to follow the below rules.
+
+1)hook is not a component, and it is a normal js function
+ for the purpose of ReactJS functional component.
+2)So its name must start with small case and camel case. 
+3)"use" prefix must be maintained.
+
+working with useRef() hook 
+============================
+by using this hook, directly we can communicate with elements dom objects. 
+
+
+
+
 
 
 

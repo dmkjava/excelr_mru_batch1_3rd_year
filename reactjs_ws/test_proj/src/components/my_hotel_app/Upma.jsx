@@ -1,5 +1,9 @@
+import { useEffect } from 'react';
 
 function Upma(){
+    useEffect(()=>{
+                document.title =  "Upma"
+            }, []);
     return (
         <div>
             <h3>Upma</h3>

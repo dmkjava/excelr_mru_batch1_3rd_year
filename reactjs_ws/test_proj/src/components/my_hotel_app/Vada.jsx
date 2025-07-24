@@ -1,5 +1,9 @@
+import { useEffect } from 'react';
 
 function Vada(){
+    useEffect(()=>{
+                document.title =  "Vada"
+            }, []);
     return (
         <div>
             <h3>Vada</h3>

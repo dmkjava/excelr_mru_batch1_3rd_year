@@ -1,5 +1,9 @@
+import { useEffect } from 'react';
 
 function Dosa(){
+    useEffect(()=>{
+            document.title =  "Dosa"
+        }, []);
     return (
         <div>
             <h3>Dosa</h3>

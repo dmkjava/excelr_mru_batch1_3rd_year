@@ -1,5 +1,9 @@
+import { useEffect } from 'react';
 
 function Chapathi(){
+    useEffect(()=>{
+            document.title =  "Chapathi"
+        }, []);
     return (
         <div>
             <h3>Chapathi</h3>

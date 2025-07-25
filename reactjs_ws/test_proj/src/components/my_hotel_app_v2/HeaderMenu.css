@@ -1,0 +1,35 @@
+
+*{
+    margin: 0; 
+    padding: 0;
+}
+.logo{
+    font-size: 48px;
+    color: #fff;
+    line-height: 90px;
+    text-decoration: none;
+}
+header{
+    background-color: blue;
+    height: 100px;
+}
+header nav{
+    overflow: hidden;
+}
+header nav ul{
+    float: right;
+    margin-right: 50px;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 5px 20px;
+}
+header nav ul li:hover{
+    background-color: darkorchid;
+}
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 26px;
+    line-height: 90px;
+}

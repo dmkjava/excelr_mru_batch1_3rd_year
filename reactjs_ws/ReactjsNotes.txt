@@ -683,6 +683,40 @@ working with useRef() hook
 by using this hook, directly we can communicate with elements dom objects. 
 
 
+working with custom hooks 
+custom hooks name should start prefix with useXxx(). 
+It look like as normal java script functions, 
+but these are ment for the purpose of 
+ReactJS functional components.
+so these must be used used only in ReactJS Functional 
+components. 
+hooks are used at top level of the functional components. 
+Not allowed to used in side of conditional statements. 
+Not allowed to use in side of loops 
+Not allowed to used in nested functions. 
+hooks may take some arguments 
+
+so far how many hooks we discussed?
+useState()
+useEffect() 
+useReduce() 
+useRef() 
+useContext()
+
+rerendering behaviour of the components 
+=============================================
+when ever a component state is modified then
+this component is causes re rendering. 
+It is the natural behaviour of components in ReactJS. 
+Not only this one, all its child components also causes 
+to re render. 
+If child component getting some benifits in this rerendering 
+process, then rerendering the component is meaning full.
+With out any state modifications or props modifications, 
+rerendering of the child component is causes performance issue. 
+so we have to stop unnecessary rerendering of the child components.
+
+
 
 
 

@@ -30,6 +30,9 @@ import FakeStoreApiEcommerseApp from './components/fakestore_api/FakeStoreApiEco
 import ParentToChild from './components/parent_child/ParentToChild';
 import ChildToParent from './components/child_parent/ChildToParent';
 import ColorPicker from './components/color_picker/ColorPicker';
+import MyHotelAppV2 from './components/my_hotel_app_v2/MyHotelAppV2';
+import MemoDemo from './components/memo_demo/MemoDemo';
+import UseCallBackDemo from './components/use_callback_demo/UseCallBackDemo';
 
 function App() {
   return (
@@ -56,7 +59,8 @@ function App() {
       {/* <DummyJsonEcommerseApp></DummyJsonEcommerseApp> */}
       {/* <FakeStoreApiEcommerseApp></FakeStoreApiEcommerseApp> */}
       {/* <AxiosDemoUsingDummyJson></AxiosDemoUsingDummyJson> */}
-      <MyHotelApp></MyHotelApp>
+      {/* <MyHotelApp></MyHotelApp> */}
+      {/* <MyHotelAppV2></MyHotelAppV2> */}
       {/* <PropsDrillingApp></PropsDrillingApp> */}
       {/* <PropsDrillingAppV2></PropsDrillingAppV2> */}
       {/* <ContextApiDemo></ContextApiDemo> */}
@@ -65,6 +69,8 @@ function App() {
       {/* <ParentToChild></ParentToChild> */}
       {/* <ChildToParent></ChildToParent> */}
       {/* <ColorPicker></ColorPicker> */}
+      {/* <MemoDemo></MemoDemo> */}
+      <UseCallBackDemo></UseCallBackDemo>
     </div>
   );
 }

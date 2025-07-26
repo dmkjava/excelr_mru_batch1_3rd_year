@@ -7,6 +7,7 @@ import Puri from "./Puri";
 import Dosa from "./Dosa";
 import Upma from "./Upma";
 import MysurBonda from "./MysurBonda";
+import Home from "./Home";
 
 function MyHotelAppV2(){
     return (
@@ -14,6 +15,7 @@ function MyHotelAppV2(){
             <BrowserRouter>
                 <HeaderMenu></HeaderMenu>
                 <Routes>
+                    <Route path="/" element={<Home></Home>}></Route>
                     <Route path="/idly" element={<Idly></Idly>}></Route>
                     <Route path="/vada" element={<Vada></Vada>}></Route>
                     <Route path="/upma" element={<Upma></Upma>}></Route>

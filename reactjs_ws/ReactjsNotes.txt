@@ -716,6 +716,28 @@ With out any state modifications or props modifications,
 rerendering of the child component is causes performance issue. 
 so we have to stop unnecessary rerendering of the child components.
 
+memo() has to capability to recognize changes in data props. 
+but it is help less in case of functional props. 
+Note: 
+when ever a component is rerendereing its all function declarations 
+also recreated, hence these functions memory is modified. 
+when ever these functions are passed as functional props, 
+then memo() doest not have capability to stop rerendering of the child component.
+to over come this problem we have to use useCallback() hook, 
+to define the funtional props. 
+useCallback() hook is same as useEffect(), 
+that means it takes 2 arguments, 
+1) function declaration or call back function 
+2)dependency array 
+when ever the state is modified if that state is specified 
+in dependency array, then only useCallback () hook will allowe to create its 
+first argument function .
+
+programmatical navigation 
+===========================
+useNavigate() functional hook is used to do programatical navigation. 
+
+
 
 
 

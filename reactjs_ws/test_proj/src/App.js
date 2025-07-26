@@ -33,6 +33,7 @@ import ColorPicker from './components/color_picker/ColorPicker';
 import MyHotelAppV2 from './components/my_hotel_app_v2/MyHotelAppV2';
 import MemoDemo from './components/memo_demo/MemoDemo';
 import UseCallBackDemo from './components/use_callback_demo/UseCallBackDemo';
+import UseMemoDemo from './components/use_memo_demo/UseMemoDemo';
 
 function App() {
   return (
@@ -60,7 +61,7 @@ function App() {
       {/* <FakeStoreApiEcommerseApp></FakeStoreApiEcommerseApp> */}
       {/* <AxiosDemoUsingDummyJson></AxiosDemoUsingDummyJson> */}
       {/* <MyHotelApp></MyHotelApp> */}
-      {/* <MyHotelAppV2></MyHotelAppV2> */}
+      <MyHotelAppV2></MyHotelAppV2>
       {/* <PropsDrillingApp></PropsDrillingApp> */}
       {/* <PropsDrillingAppV2></PropsDrillingAppV2> */}
       {/* <ContextApiDemo></ContextApiDemo> */}
@@ -70,7 +71,8 @@ function App() {
       {/* <ChildToParent></ChildToParent> */}
       {/* <ColorPicker></ColorPicker> */}
       {/* <MemoDemo></MemoDemo> */}
-      <UseCallBackDemo></UseCallBackDemo>
+      {/* <UseCallBackDemo></UseCallBackDemo> */}
+      {/* <UseMemoDemo></UseMemoDemo> */}
     </div>
   );
 }
